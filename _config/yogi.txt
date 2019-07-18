@@ -1,0 +1,7 @@
+    <!-- Custom CSS -->
+
+    <link href="<?= base_url('_assets/css/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('_assets/css/simple-sidebar.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('_assets/css/my-custome.css') ?>" rel="stylesheet">
+    <!-- color -->
+    <link href="<?= base_url('_assets/css/color-style.css') ?>" rel="stylesheet">

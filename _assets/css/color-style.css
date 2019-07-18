@@ -1,0 +1,37 @@
+
+#text-primary-light-small{
+    color: rgba(255, 255, 255, 0.959);
+}
+
+#text-header-h1 {
+    color: rgba(255, 255, 255, 0.932);
+    text-shadow: 2px 1px #07070779;
+}
+#text-header-h1 .header-digitalent{
+    margin-bottom: 40px;
+}
+.text-link-digitalent:hover{
+    color: #FFFFFF;
+}
+a {
+    color: rgba(255, 255, 255, 0.568);
+    text-decoration: none;
+}
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+}
