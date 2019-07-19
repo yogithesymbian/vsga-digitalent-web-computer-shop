@@ -3,180 +3,32 @@
  -->
 <?php include_once('_admin_header.php'); ?>
 
-
 <sticky-custome>
-
     <a href="#menu-toggle" class="btn" id="menu-toggle"> <span class="glyphicon glyphicon-align-justify" id="navbar-home-digitalent"></span> </a>
-
 </sticky-custome>
+
 <div class="container">
-
     <!-- Modal of add barang -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content modal-style-digitalent">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" style="color: white">INPUT BARANG - LAPTOP </h4>
-                </div>
-
-                <div class="modal-body">
-
-                    <form action="#" method="post" enctype="multipart/form-data">
-
-                        <div class=" input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                            <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="x" placeholder="IMAGE">
-                            <input type="file" name="files[]" multiple />
-                            <input type="submit" value="Create Gallery" id="selectedButton" class="pull-right" />
-                        </div>
-
-                        <hr>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                            <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="codeBrg" placeholder="KODE BARANG" required autofocus>
-                        </div>
-
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-tasks"></i></span>
-                            <input id="nameBrg" type="text" class="form-control form-modal-digitalent" name="nameBrg" placeholder="NAMA BARANG" required>
-                        </div>
-                        <br>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
-                            <input id="file" type="file" class="form-control form-modal-digitalent" name="datafiledir" placeholder="file" webkitdirectory multiple>
-                        </div>
-                        <br>
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
-                            <input id="file" type="file" class="form-control form-modal-digitalent" name="datafile1" placeholder="file" multiple>
-                        </div>
-                        <br>
-
-
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
-                            <input id="quantity" type="number" class="form-control form-modal-digitalent" name="quantity" placeholder="Quantity 1 PCS" multiple>
-                        </div>
-                        <br>
-
-
-                        <input type="submit" value="+ ADD" class="btn btn-digitalent">
-
-
-                    </form>
-
-                </div>
-
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> -->
-            </div>
-
-        </div>
-    </div>
-    <!-- end of modal view-->
+    <?php include_once('modal-add-barang.php'); ?>
+    <!-- Modal of add barang -->
 
     <!-- Modal of image -->
-    <!-- Modal of add barang -->
-    <div id="image1" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content modal-style-digitalent">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title" style="color: white">IMAGE PREVIEW- LAPTOP </h4>
-                </div>
-
-                <div class="modal-body">
-
-                    <img src="../_assets/image/computer-1.jpg" alt="" width="300" height="300">
-
-                </div>
-
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div> -->
-            </div>
-
-        </div>
-    </div>
-    <!-- end of modal view-->
+    <?php include_once('modal-image-view-barang.php'); ?>
     <!-- end of modal of image -->
-
     <br>
     <br>
 
+    <?php include_once('read-barang.php'); ?>
 
     <article class="version">
-        <section class="page-header">
-            <h1 class="page-title">Table Barang</h1>
-            <div class="button-group">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ ADD</button>
-                <div class="group-segment"></div>
-                <button type="button" class="btn btn-icon"></button>
-                <button type="button" class="btn btn-icon"></button>
-            </div>
-        </section>
+
+        <?php include_once('card-view-barang.php'); ?>
         <br>
-
-        <!-- Table -->
-        <table class="table table-responsive">
-            <thead>
-                <th>CODE BARANG</th>
-                <th>NAMA BARANG</th>
-                <th>SPEC</th>
-                <th>QUANTITY</th>
-                <th>IMAGE</th>
-                <th>ACTION</th>
-
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-edit"></span> </button>
-                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-trash"></span> </button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>later'</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-edit"></span> </button>
-                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-trash"></span> </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Table  -> content -->
+        <?php include_once('card-view-barang-content.php'); ?>
+        <!-- end of Table -->
+        <!-- for container the content -->
         <div class="container">
-
-
         </div>
     </article>
 
@@ -239,7 +91,7 @@ if (isset($code_brg)) {
                     &times;
                 </a>
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                <strong> Fail Login</strong> Password isn't match
+                <strong> Login required</strong> you need login to add barang
             </div>
         </div>
     </div>
