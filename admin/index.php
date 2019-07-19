@@ -11,7 +11,7 @@
 </sticky-custome>
 <div class="container">
 
-    <!-- Modal -->
+    <!-- Modal of add barang -->
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -29,7 +29,7 @@
 
                         <div class=" input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                            <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="x" placeholder="KODE BARANG">
+                            <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="x" placeholder="IMAGE">
                             <input type="file" name="files[]" multiple />
                             <input type="submit" value="Create Gallery" id="selectedButton" class="pull-right" />
                         </div>
@@ -83,45 +83,61 @@
     </div>
     <!-- end of modal view-->
 
-    <br>
-    <br>
+    <!-- Modal of image -->
+    <!-- Modal of add barang -->
+    <div id="image1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-    <ul class="nav nav-tabs nav-justified">
-        ...
-    </ul>
-    <ul class="nav nav-pills nav-justified">
-        ...
-    </ul>
+            <!-- Modal content-->
+            <div class="modal-content modal-style-digitalent">
 
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Profile</a></li>
-        <li role="presentation"><a href="#">Messages</a></li>
-    </ul>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color: white">IMAGE PREVIEW- LAPTOP </h4>
+                </div>
 
-    <br>
-    <br>
+                <div class="modal-body">
 
+                    <img src="../_assets/image/computer-1.jpg" alt="" width="300" height="300">
 
-    <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <!-- Trigger the modal with a button -->
-        <div class="panel-heading">Table Barang
-            <button type="button" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#myModal" style="margin-bottom: 20px"> <span class="glyphicon glyphicon-plus"></span> ADD </button>
+                </div>
+
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+
         </div>
-        <div class="panel-body">
-            <p>body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum neque amet temporibus aliquam! Maxime, nostrum minus ut magnam facilis enim accusamus dicta hic adipisci sequi, eligendi unde rem porro officiis.</p>
-        </div>
+    </div>
+    <!-- end of modal view-->
+    <!-- end of modal of image -->
+
+    <br>
+    <br>
 
 
+    <article class="version">
+        <section class="page-header">
+            <h1 class="page-title">Table Barang</h1>
+            <div class="button-group">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ ADD</button>
+                <div class="group-segment"></div>
+                <button type="button" class="btn btn-icon"></button>
+                <button type="button" class="btn btn-icon"></button>
+            </div>
+        </section>
+        <br>
 
         <!-- Table -->
-        <table class="table table-striped table-bordered table-hover">
+        <table class="table table-responsive">
             <thead>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
+                <th>CODE BARANG</th>
+                <th>NAMA BARANG</th>
+                <th>SPEC</th>
+                <th>QUANTITY</th>
+                <th>IMAGE</th>
+                <th>ACTION</th>
+
 
             </thead>
             <tbody>
@@ -130,86 +146,40 @@
                     <td>mmm</td>
                     <td>mmm</td>
                     <td>mmm</td>
+                    <td>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-edit"></span> </button>
+                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-trash"></span> </button>
+                    </td>
+
                 </tr>
                 <tr>
+                    <td>later'</td>
                     <td>mmm</td>
                     <td>mmm</td>
                     <td>mmm</td>
-                    <td>mmm</td>
+                    <td>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                        <button type="button" class="btn btn-icon" data-toggle="modal" data-target="#image1"></button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-edit"></span> </button>
+                        <button type="button" class="btn btn-icon"> <span class="glyphicon glyphicon-trash"></span> </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
-    </div>
+        <div class="container">
 
-    <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <div class="panel-heading">Table Barang</div>
-        <div class="panel-body">
-            <p>body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum neque amet temporibus aliquam! Maxime, nostrum minus ut magnam facilis enim accusamus dicta hic adipisci sequi, eligendi unde rem porro officiis.</p>
+
         </div>
+    </article>
 
-
-
-        <!-- Table -->
-        <table class="table table-striped table-bordered table-hover">
-            <thead>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                </tr>
-                <tr>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <div class="panel-heading">Table Barang</div>
-        <div class="panel-body">
-            <p>body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum neque amet temporibus aliquam! Maxime, nostrum minus ut magnam facilis enim accusamus dicta hic adipisci sequi, eligendi unde rem porro officiis.</p>
-        </div>
-
-
-
-        <!-- Table -->
-        <table class="table table-striped table-bordered table-hover">
-            <thead>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
-                <th>ID</th>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                </tr>
-                <tr>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                    <td>mmm</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 
 </div>
 <div class="break-point">
@@ -261,6 +231,7 @@ if (isset($code_brg)) {
     }
 } else {
     ?>
+    <!-- need log in for admin page , later's will use -->
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
             <div class="alert alert-danger alert-dismissable" role="alert">
@@ -281,11 +252,11 @@ extract($_POST);
 $error = array();
 $extension = array("jpeg", "jpg", "png", "gif");
 
-$folder = "../log/image-"; //init folder name
+$folder = "../log/image-"; // init folder name
 
 $oldmask = umask(0); // for 0022
 
-$create_path = mkdir($folder . $code_brg, 0777); //give folder id
+$create_path = mkdir($folder . $code_brg, 0777); // give folder id
 
 umask($oldmask); // octal calculation
 

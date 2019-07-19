@@ -1,0 +1,98 @@
+
+/* Used for presentation purposes */
+.version {
+  width: auto;
+  height: auto;
+  margin: 30px auto;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+}
+
+.page-header {
+  position: relative;
+  padding: 20px 0px 30px 0px;
+  margin: 0px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.page-title {
+  font-size: 32px;
+  line-height: 1.0;
+  font-weight: normal;
+  margin: 0px;
+  color: rgba(255, 255, 255, 0.966);
+}
+
+
+.group-segment {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 1px;
+  margin: 4px 12px;
+  background-color: #ccc;
+}
+
+
+.button-group {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.button-group .btn {
+  margin-right: 0px;
+  vertical-align: top;
+}
+
+.btn {
+  -webkit-appearance: none;
+  font-family: "Proxima Nova-Bold", "Proxima Nova", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.0;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.btn-primary {
+  color: rgba(255, 255, 255, 0.589);
+  background-color: #ffffff00;
+  border-color: #00ff0d;
+}
+
+.btn-primary:hover {
+  color: rgba(255, 255, 255, 0.589);
+  background-color: #ffffff00;
+  border-color: #00ff0d;
+}
+.btn-icon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(247, 247, 255, 0);
+}
+.btn-icon:hover {
+  background-color: rgba(30, 255, 0, 0.301);
+  border-color: black;
+}
+.btn-icon:hover .glyphicon {
+  color: rgb(255, 255, 255);
+}
+
+
+.btn-icon:before {
+  content: " ";
+  position: asbolute;
+  left: 0px;
+  top: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: rgba(247, 247, 255, 0);
+}
+
+.table {
+  color: rgba(255, 255, 255, 0.966);
+}

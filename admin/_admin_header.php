@@ -15,8 +15,9 @@ require_once "../_config/config.php";
     <!-- Custom CSS -->
 
     <link href="../_assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../_assets/css/simple-sidebar-scroll.css" rel="stylesheet">
+    <link href="../_assets/css/simple-sidebar-admin.css" rel="stylesheet">
     <link href="../_assets/css/my-custome.css" rel="stylesheet">
+    <link href="../_assets/css/cardview-article-digitalent.css" rel="stylesheet">
     <!-- color -->
     <link href="../_assets/css/color-style.css" rel="stylesheet">
 
@@ -38,25 +39,12 @@ require_once "../_config/config.php";
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
-                        About Us
+                    <a href="<?= base_url('dashboard') ?>">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Dashboard
                     </a>
                 </li>
-                <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
-                        Contact Us
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
-                        Terms of Service
-                    </a>
-                </li>
-                <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
-                        Privacy Policy
-                    </a>
-                </li>
+
             </ul>
 
 

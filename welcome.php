@@ -48,11 +48,9 @@
 
 
   <div class="container">
-    <h3>Collapsible Navbar</h3>
+    <h3>Lorem Navbar</h3>
     <p>
-      In this example, the navigation bar is hidden on small screens and
-      replaced by a button in the top right corner (try to re-size this
-      window).
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum earum esse temporibus dolorum quis veniam optio, labore voluptatum iste et nam hic porro sed eaque eos tempora officiis quibusdam.
     </p>
 
     <p>
