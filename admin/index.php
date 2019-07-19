@@ -5,7 +5,9 @@
 
 
 <sticky-custome>
+
     <a href="#menu-toggle" class="btn" id="menu-toggle"> <span class="glyphicon glyphicon-align-justify" id="navbar-home-digitalent"></span> </a>
+
 </sticky-custome>
 <div class="container">
 
@@ -15,6 +17,7 @@
 
             <!-- Modal content-->
             <div class="modal-content modal-style-digitalent">
+
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title" style="color: white">INPUT BARANG - LAPTOP </h4>
@@ -22,8 +25,16 @@
 
                 <div class="modal-body">
 
-                    <form action="#" method="post">
+                    <form action="#" method="post" enctype="multipart/form-data">
 
+                        <div class=" input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
+                            <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="x" placeholder="KODE BARANG">
+                            <input type="file" name="files[]" multiple />
+                            <input type="submit" value="Create Gallery" id="selectedButton" class="pull-right" />
+                        </div>
+
+                        <hr>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
                             <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="codeBrg" placeholder="KODE BARANG" required autofocus>
@@ -95,7 +106,8 @@
     <div class="panel panel-default">
         <!-- Default panel contents -->
         <!-- Trigger the modal with a button -->
-        <div class="panel-heading">Table Barang <button type="button" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#myModal" style="margin-bottom: 20px"> <span class="glyphicon glyphicon-plus"></span> </button>
+        <div class="panel-heading">Table Barang
+            <button type="button" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#myModal" style="margin-bottom: 20px"> <span class="glyphicon glyphicon-plus"></span> ADD </button>
         </div>
         <div class="panel-body">
             <p>body Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum neque amet temporibus aliquam! Maxime, nostrum minus ut magnam facilis enim accusamus dicta hic adipisci sequi, eligendi unde rem porro officiis.</p>
@@ -260,8 +272,49 @@ if (isset($code_brg)) {
             </div>
         </div>
     </div>
+
+    <!-- PHP SCRIPT HANDLE IMAGE UPLOAD -->
 <?php
 }
+
+extract($_POST);
+$error = array();
+$extension = array("jpeg", "jpg", "png", "gif");
+
+$folder = "../log/image-"; //init folder name
+
+$oldmask = umask(0); // for 0022
+
+$create_path = mkdir($folder . $code_brg, 0777); //give folder id
+
+umask($oldmask); // octal calculation
+
+$init_target = $folder . $code_brg; // re init for post-delay
+
+$target_dir = $init_target; // target_dir
+
+foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
+
+    $file_name = $_FILES["files"]["name"][$key];
+    $file_tmp = $_FILES["files"]["tmp_name"][$key];
+    $ext = pathinfo($file_name, PATHINFO_EXTENSION);
+
+    if (in_array($ext, $extension)) {
+        if (!file_exists($target_dir . $txtGalleryName . "/" . $file_name)) {
+            move_uploaded_file($file_tmp = $_FILES["files"]["tmp_name"][$key], $target_dir . $txtGalleryName . "/" . $file_name);
+        } else {
+            $filename = basename($file_name, $ext);
+            $newFileName = $filename . time() . "." . $ext;
+            move_uploaded_file($file_tmp = $_FILES["files"]["tmp_name"][$key], $target_dir . $txtGalleryName . "/" . $newFileName);
+        }
+    } else {
+        array_push($error, "$file_name, ");
+    }
+}
+?>
+
+<!-- END OF PHP SCRIPT HANDLE IMAGE UPLOAD -->
+<?php
 
 ?>
 <!-- PHP SCRIPT HANDLE ADD NEW RECORD -->

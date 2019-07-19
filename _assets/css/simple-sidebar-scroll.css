@@ -12,6 +12,7 @@ html, body
     -webkit-overflow-scrolling:auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-display: inherit;
+    background-color: #fafafa;
 }
 #wrapper {
     padding-left: 0;
@@ -23,28 +24,13 @@ html, body
 #blur {
             filter: blur(2 px);
 }
-.overlay{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	opacity: .5;
-	z-index: 1;
-}
-.modal{
-	z-index: 2;
-}
 
 .form-modal-digitalent {
     background-color: rgba(255, 255, 255, 0);
     color: #ffffffb7;
 }
 .modal-style-digitalent{
-    background-color: rgb(0, 0, 0);
+    background-color: #212121dc;
 }
 
 /*
@@ -89,7 +75,8 @@ sticky-custome{
     background-size: cover;
 }
 html {
-    background-image: url('../image/background-login-toko-komputer.jpg');
+    background-color: #263238;
+    /* background-image: url('../image/background-login-toko-komputer.jpg'); */
 }
 
 #wrapper.toggled {
@@ -105,7 +92,7 @@ html {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #1C313A;
+    background: #212121;
 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
