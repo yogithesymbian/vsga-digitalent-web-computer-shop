@@ -14,6 +14,7 @@ $connect = mysqli_connect($HOST, $USER, $PASSWORD, $DATABASE);
 
 // $connect->close();
 
+// not use , at this time just cause reviewer
 function base_url($url = null)
 {
     $base_url = "http://y.id/digitalent";
