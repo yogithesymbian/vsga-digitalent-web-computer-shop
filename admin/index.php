@@ -12,13 +12,18 @@
     <?php include_once('modal-add-barang.php'); ?>
     <!-- Modal of add barang -->
 
+    <!-- Modal of spec -->
+    <?php include_once('modal-spec-barang.php'); ?>
+    <!-- end of modal of spec -->
+
     <!-- Modal of image -->
     <?php include_once('modal-image-view-barang.php'); ?>
     <!-- end of modal of image -->
     <br>
     <br>
-    <?php include_once('read-barang.php'); ?>
+    <?php include_once('header-body.php'); ?>
 
+    <!-- article start of content -->
     <article class="version">
 
         <!-- cardview-table -->
@@ -34,11 +39,32 @@
         </div>
     </article>
 
+    <!-- article start of content -->
+    <article class="version">
 
+        <!-- cardview-table -->
+        <?php include_once('card-view-barang1.php'); ?>
+        <br>
+
+        <!-- Table  -> content -->
+        <?php include_once('card-view-barang-content1.php'); ?>
+        <!-- end of Table -->
+
+        <!-- for container the content -->
+        <div class="container">
+        </div>
+    </article>
+
+
+
+    <!-- end of article start of content -->
 </div>
+
+
 <div class="break-point">
     <!-- for break point -->
 </div>
+
 </div>
 
 </div>

@@ -14,7 +14,7 @@
     </thead>
     <tbody>
         <!-- content of database -->
-        <?php include_once('_function_index_read.php') ?>
+        <?php include_once('_function_index_read1.php') ?>
         <!-- end of content database-->
     </tbody>
 </table>
