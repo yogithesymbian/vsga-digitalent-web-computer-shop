@@ -1,5 +1,4 @@
 <?php
-require_once "../_config/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +17,8 @@ require_once "../_config/config.php";
         <div class="container-fluid ">
 
 
-
             <!-- header -->
-            <?php include_once('_header_global.php') ?>
+            <?php include_once('_header_already_log_in.php') ?>
             <!-- end of container-fluid -->
 
             <div class="container">
@@ -49,11 +47,6 @@ require_once "../_config/config.php";
             </div>
         </div>
     </div>
-
-
-    <!--  -->
-    <?php include_once('_function_modal_log_in.php') ?>
-    <!--  -->
 
     <?php include_once('../_footer.php'); ?>
     <!-- jquery -->

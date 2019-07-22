@@ -31,7 +31,7 @@
 
     <div class="row" style="background-color: #4D000000">
 
-        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>SIGN NOW</strong> </h1>
+        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>SIGN UP</strong> </h1>
 
         <div class="col-md-7 col-md-offset-4">
 
@@ -40,17 +40,17 @@
             <!-- jika click next maka akan masuk ke ( _login_after_next.php ) -->
             <!-- text don't have an account menuju (_register_check_email.php) -->
 
-            <form action="_login_after_next.php" method="post" class="#">
+            <form action="_register_form.php" method="post" class="#">
 
                 <div class="form-group col-md-8">
-                    <label for="email" class="#" id="text-primary-light-small">Email</label>
+                    <label for="email" class="#" id="text-primary-light-small">Email (Checking Valid Mail)</label>
                     <input type="email" name="email" id="email" class="form-control" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-offset-6 col-sm-8">
 
-                        <input type="submit" value="LOGIN" class="btn btn-digitalent">
+                        <input type="submit" value="NEXT" class="btn btn-digitalent">
 
                     </div>
                 </div>
@@ -60,24 +60,22 @@
         </div>
 
     </div>
-    <div class="break-point">
-        <!-- for break point -->
-    </div>
-
 
     <div class="row">
         <div class="col-md-7 col-xs-offset-5">
 
-            <a href="http://y.id/digitalent/_register_check_email.php" class="text-center text-link-digitalent"> <strong>Don't have an account?</strong> </a>
+            <a href="index.html" class="text-center text-link-digitalent"> <strong>Already have an account?</strong> </a>
 
         </div>
     </div>
-
-    <div style="margin-bottom: 32px">
+    <div class="break-point" style="margin-bottom: 135px">
         <!-- for break point -->
     </div>
+
 </div>
 
 </div>
+
+
 
 <?php include_once('_footer.php'); ?>

@@ -1,4 +1,4 @@
-<!-- PHP SCRIPT HANDLE ADD NEW RECORD -->
+<!-- initialize for index func -->
 <?php
 error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 
@@ -9,9 +9,31 @@ $image1 = $_POST['datafile1'];
 $pathimage = $_POST['datafiledir'];
 
 
+extract($_POST);
+$error = array();
+$extension = array("jpeg", "jpg", "png", "gif");
+
+$folder = "../log/image-"; // init folder name
+
+$oldmask = umask(0); // for 0022
+
+$create_path = mkdir($folder . $code_brg, 0777); // give folder id
+
+umask($oldmask); // octal calculation
+
+$init_target = $folder . $code_brg; // re init for post-delay
+
+$target_dir = $init_target; // target_dir
+
+?>
+<!-- end of initialize for index func -->
+
+
+<!-- PHP SCRIPT HANDLE ADD NEW RECORD -->
+<?php
 if (isset($code_brg)) {
 
-    $query = "INSERT INTO tb_barang VALUES (uuid(),'$code_brg', '$nama_brg','$quantity','$pathimage','$image1',NULL,NULL)";
+    $query = "INSERT INTO tb_barang VALUES (uuid(),'$code_brg', '$nama_brg','$quantity','$target_dir',NULL,NULL,NULL)";
     $sql = mysqli_query($connect, $query);
     // Jika data disimpan value sql = 1
     // Jika data tidak tersimpan value sql = 0
@@ -23,7 +45,7 @@ if (isset($code_brg)) {
         </script>";
 
         <script language='javascript'>
-            location.href = '#'
+            location.href = ''
         </script>";
     <?php
     } else {
@@ -34,7 +56,7 @@ if (isset($code_brg)) {
         </script>";
 
         "<script language='javascript'>
-            location.href = '#'
+            location.href = '#faild-added-record'
         </script>";
     <?php
     }
@@ -57,21 +79,6 @@ if (isset($code_brg)) {
 <?php
 }
 
-extract($_POST);
-$error = array();
-$extension = array("jpeg", "jpg", "png", "gif");
-
-$folder = "../log/image-"; // init folder name
-
-$oldmask = umask(0); // for 0022
-
-$create_path = mkdir($folder . $code_brg, 0777); // give folder id
-
-umask($oldmask); // octal calculation
-
-$init_target = $folder . $code_brg; // re init for post-delay
-
-$target_dir = $init_target; // target_dir
 
 foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
 

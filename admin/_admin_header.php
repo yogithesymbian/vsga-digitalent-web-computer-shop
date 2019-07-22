@@ -12,14 +12,8 @@ require_once "../_config/config.php";
     <meta name="description" content="Larahomesick">
     <meta name="author" content="Yogi Arif Widodo">
     <title>Home - Toko Komputer</title>
-    <!-- Custom CSS -->
 
-    <link href="../_assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../_assets/css/simple-sidebar-admin.css" rel="stylesheet">
-    <link href="../_assets/css/my-custome.css" rel="stylesheet">
-    <link href="../_assets/css/cardview-article-digitalent.css" rel="stylesheet">
-    <!-- color -->
-    <link href="../_assets/css/color-style.css" rel="stylesheet">
+    <?php include_once('link-rel-admin.php'); ?>
 
 </head>
 

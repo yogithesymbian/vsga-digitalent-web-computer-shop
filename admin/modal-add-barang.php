@@ -16,44 +16,37 @@
 
                 <form action="#" method="post" enctype="multipart/form-data">
 
-                    <div class=" input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                        <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="x" placeholder="IMAGE">
-                        <input type="file" name="files[]" multiple />
-                        <input type="submit" value="Create Gallery" id="selectedButton" class="pull-right" />
+
+                    <input type="file" class="input-sm" name="files[]" multiple />
+
+                    <hr>
+
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-qrcode"></i></span>
+                        <input id="codeBrg" type="text" class="form-control form-modal-digitalent text-input" name="codeBrg" placeholder="KODE BARANG" required autofocus>
+                    </div>
+
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-tasks"></i></span>
+                        <input id="nameBrg" type="text" class="form-control form-modal-digitalent text-input" name="nameBrg" placeholder="NAMA BARANG" required>
+                    </div>
+
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-upload"></i></span>
+                        <input id="file" type="file" class="form-control form-modal-digitalent" name="datafiledir" placeholder="file" webkitdirectory multiple>
+                    </div>
+
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-upload"></i></span>
+                        <input id="file" type="file" class="form-control form-modal-digitalent" name="datafile1" placeholder="file" multiple>
                     </div>
 
                     <hr>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-qrcode"></i></span>
-                        <input id="codeBrg" type="text" class="form-control form-modal-digitalent" name="codeBrg" placeholder="KODE BARANG" required autofocus>
-                    </div>
 
-                    <br>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-tasks"></i></span>
-                        <input id="nameBrg" type="text" class="form-control form-modal-digitalent" name="nameBrg" placeholder="NAMA BARANG" required>
-                    </div>
-                    <br>
-
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
-                        <input id="file" type="file" class="form-control form-modal-digitalent" name="datafiledir" placeholder="file" webkitdirectory multiple>
-                    </div>
-                    <br>
-
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
-                        <input id="file" type="file" class="form-control form-modal-digitalent" name="datafile1" placeholder="file" multiple>
-                    </div>
-                    <br>
-
-
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-upload"></i></span>
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-upload"></i></span>
                         <input id="quantity" type="number" class="form-control form-modal-digitalent" name="quantity" placeholder="Quantity 1 PCS" multiple>
                     </div>
-                    <br>
 
 
                     <input type="submit" value="+ ADD" class="btn btn-digitalent">

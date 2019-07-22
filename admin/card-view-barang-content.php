@@ -5,8 +5,8 @@
     <thead>
         <th>CODE BARANG</th>
         <th>NAMA BARANG</th>
-        <th>SPEC</th>
         <th>QUANTITY</th>
+        <th>SPEC</th>
         <th>IMAGE</th>
         <th>ACTION</th>
 

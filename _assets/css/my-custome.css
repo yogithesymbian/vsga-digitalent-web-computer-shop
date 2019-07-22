@@ -1,8 +1,42 @@
+
+/*
+* My custome css for wireframe was i made
+*/
 .image-replace-shadow {
-    background-color: #1C131A;
+    /* background-color: #1C131A; */
+    /* background-main */
+    background: #1f253d;
     opacity: 0.9;
 }
 
 .break-point {
     margin-bottom: 100px;
 }
+
+	/*********************************************** MODAL ***********************************************/
+.form-modal-digitalent {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffffb7;
+}
+.modal-style-digitalent{
+    background-color: #1F253D;
+    color: #FFF;
+}
+	/*********************************************** END OF MODAL ***********************************************/
+/*
+colorPrimaryLight #718792
+colorPrimaryDark #1C131A
+colorPrimary #455A64
+*/
+	/*********************************************** BUTTON-CUSTOME ***********************************************/
+.btn-digitalent {
+    background: #00000000;
+    border: 4px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.btn-digitalent:hover{
+    background: #00000017;
+    border: 4px solid rgba(255, 255, 255, 0.719);
+    color: rgba(255, 255, 255, 0.733);
+}
+    /*********************************************** END BUTTON-CUSTOME ***********************************************/

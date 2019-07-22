@@ -1,5 +1,5 @@
 <?php
-require_once "_config/config.php";
+require_once "../_config/config.php";
 
 ?>
 <!DOCTYPE html>
@@ -14,11 +14,11 @@ require_once "_config/config.php";
     <title>Home - Toko Komputer</title>
     <!-- Custom CSS -->
 
-    <link href="_assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="_assets/css/simple-sidebar.css" rel="stylesheet">
-    <link href="_assets/css/my-custome.css" rel="stylesheet">
-    <!-- color -->
-    <link href="_assets/css/color-style.css" rel="stylesheet">
+    <link href="../_assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../_assets/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../_assets/css/my-custome.css" rel="stylesheet">
+    <link href="../_assets/css/color-style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -59,7 +59,7 @@ require_once "_config/config.php";
             </ul>
 
         </div>
-        <script src="_assets/js/jquery.js"></script>
-        <script src="_assets/js/bootstrap.min.js"></script>
+        <script src="../_assets/js/jquery.js"></script>
+        <script src="../_assets/js/bootstrap.min.js"></script>
         <div id="page-content-wrapper">
             <div class="container-fluid ">

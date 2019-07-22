@@ -86,7 +86,7 @@
     <div class="row">
         <div class="col-md-7 col-xs-offset-5">
 
-            <a href="http://y.id/digitalent/index.php" class="text-center text-link-digitalent"> <strong>Already have an account?</strong> </a>
+            <a href="index.html" class="text-center text-link-digitalent"> <strong>Already have an account?</strong> </a>
 
         </div>
     </div>
@@ -131,7 +131,7 @@ if (isset($username)) {
         </script>";
 
         <script language='javascript'>
-            location.href = 'welcome.php'
+            location.href = '../shop/home.php'
         </script>";
     <?php
     } else {

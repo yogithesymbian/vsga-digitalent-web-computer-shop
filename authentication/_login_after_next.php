@@ -56,7 +56,7 @@
         // echo mysqli_num_rows($sql_login);
         if (mysqli_num_rows($sql_login)) {
             $_SESSION['user'] = $user;
-            echo "<script> window.location='" . base_url('welcome.php') . "'; </script>";
+            echo "<script> window.location='" . base_url('admin') . "'; </script>";
         } else {
             ?>
             <div class="row">
