@@ -36,22 +36,22 @@ require_once "../_config/config.php";
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                    <a href="#"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
                         About Us
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                    <a href="#"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
                         Contact Us
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                    <a href="#"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
                         Terms of Service
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                    <a href="#"> <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
                         Privacy Policy
                     </a>
                 </li>

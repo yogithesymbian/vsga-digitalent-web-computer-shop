@@ -30,9 +30,16 @@
                 <?php include_once('modal_user_log_in.php'); ?>
                 <!-- end of modal of spec -->
 
+                <!-- Modal of spec -->
+                <?php include_once('modal-register-user-admin.php'); ?>
+                <!-- end of modal of spec -->
+
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-log-in">SIGN</button>
+                        |
+
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-register">REGISTER</button>
                     </li>
                 </ul>
             </div>

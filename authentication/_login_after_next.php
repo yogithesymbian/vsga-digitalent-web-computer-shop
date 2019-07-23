@@ -3,7 +3,6 @@
  -->
 <?php include_once('_header.php'); ?>
 
-
 <div class="container">
     <?php
     $email_from = $_POST['email'];
@@ -18,66 +17,13 @@
                         <!-- toggle hide sidebar -->
                         <a href="#menu-toggle" class="btn" id="menu-toggle"> <span class="glyphicon glyphicon-align-justify" id="navbar-home-digitalent"></span> </a>
                     </div>
-                    <!-- <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#">Log</a>
-                        </li>
-                    </ul> -->
                 </div>
             </nav>
         </div>
     </div>
-
-    <!-- function for check logIn -->
-
-    <?php
-    if (isset($_POST['login'])) {
-        $user = trim(mysqli_real_escape_string($connect, $_POST['email']));
-        // $pass = sha1(trim(mysqli_real_escape_string($connect, $_POST['password'])));
-        $pass = sha1(trim(mysqli_real_escape_string($connect, $_POST['password'])));
-        # check pass is sha1
-        // echo $pass;
-        // $sql_login = mysqli_query($connect, "") or die(mysqli_errno($connect));
-        // $sql_login = mysqli_query($connect, "SELECT
-        //                                     *
-        //                                 FROM
-        //                                     tb_user
-        //                                 WHERE
-        //                                     username = '$user' AND
-        //                                     password = '$pass'");
-        $sql_login = mysqli_query($connect, "SELECT
-                                            *
-                                        FROM
-                                            tb_register
-                                        WHERE
-                                            email = '$user' AND
-                                            password = '$pass'");
-        # check login
-        // echo mysqli_num_rows($sql_login);
-        if (mysqli_num_rows($sql_login)) {
-            $_SESSION['user'] = $user;
-            echo "<script> window.location='" . base_url('admin') . "'; </script>";
-        } else {
-            ?>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">
-                    <div class="alert alert-danger alert-dismissable" role="alert">
-                        <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                            &times;
-                        </a>
-                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                        <strong> Fail Login</strong> Username / Password Salah
-                    </div>
-                </div>
-            </div>
-        <?php
-        }
-    }
-    ?>
-
-    <!-- end of function login -->
-
-
+    <!-- login function -->
+    <?php include_once('_function_login.php'); ?>
+    <!-- end login function -->
     <div class="row" style="background-color: #4D000000">
 
         <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>SIGN NOW</strong> </h1>
@@ -116,9 +62,9 @@
 
 
                 <div class="form-group col-md-8">
-                    <label for="Answer" class="#" id="text-primary-light-small">Answer</label>
                     <input type="text" name="#" id="#" class="form-control" placeholder="answer" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
+
 
 
                 <div class="form-group">
@@ -146,9 +92,12 @@
 
 
 </div>
+
 <div class="break-point">
     <!-- for break point -->
 </div>
+
+
 </div>
 
 </div>

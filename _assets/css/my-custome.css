@@ -40,3 +40,16 @@ colorPrimary #455A64
     color: rgba(255, 255, 255, 0.733);
 }
     /*********************************************** END BUTTON-CUSTOME ***********************************************/
+
+span:hover::before {
+    -webkit-animation: rotation 1s infinite linear;
+    animation: rotation 1s infinite linear;
+}
+
+span:before {
+  display: inline-block;/* mandatory to be able to use transform */
+  transition: 1s all;
+}
+.alert{
+  display:none;
+}

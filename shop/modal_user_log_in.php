@@ -6,7 +6,7 @@
 
 
         <!-- Modal content-->
-        <div class="modal-content modal-style-digitalent" style="width: 330px; height: auto">
+        <div class="modal-content modal-style-digitalent" style="width: 430px; height: 590px">
 
             <div class="modal-body">
 
@@ -20,10 +20,16 @@
                             <span class="input-icon"><i class="glyphicon glyphicon-envelope"></i></span>
                             <input type="text" placeholder="digitalent@gmail.com" class="email text-input" name="email" required autofocus>
                         </div>
+                        <br>
                         <div class="input-container">
                             <input type="text" placeholder="12345" class="password text-input" name="password" required autofocus>
                             <span class="input-icon"><i class="glyphicon glyphicon-lock"></i></span>
                         </div>
+
+                        <!-- captcha -->
+                        <?php include_once('_captcha.php') ?>
+                        <!-- end of captcha -->
+
                         <input type="submit" name="login" value="SIGN IN" class="sign-in button">
                         <p class="scnd-font-color">Forgot Password?</p>
                         <a class="fb-sign-in" href="58">

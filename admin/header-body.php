@@ -1,6 +1,8 @@
 <?php
 
 ?>
-<h1>Yogi Arif Widodo</h1>
+<p style="color: ivory">
+    Hi administrator {<strong><?= $_SESSION['user']; ?></strong>} ...
+</p>
 <?php
 ?>

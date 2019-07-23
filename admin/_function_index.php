@@ -63,18 +63,17 @@ if (isset($code_brg)) {
 } else {
     ?>
     <!-- need log in for admin page , later's will use -->
-    <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-            <div class="alert alert-danger alert-dismissable" role="alert">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">
-                    &times;
-                </a>
-                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                <strong> Login required</strong> you need login to add barang
-            </div>
-        </div>
-    </div>
-
+    <!-- <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div class="alert alert-danger alert-dismissable" role="alert">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">
+                                &times;
+                            </a>
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <strong> Login required</strong> you need login to add barang
+                        </div>
+                    </div>
+                </div> -->
     <!-- PHP SCRIPT HANDLE IMAGE UPLOAD -->
 <?php
 }

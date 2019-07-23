@@ -1,6 +1,9 @@
 <?php
 require_once "../_config/config.php";
 
+if (!isset($_SESSION['user'])) {
+    echo "<script> window.location='../authentication/index.php'; </script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +36,21 @@ require_once "../_config/config.php";
                     </a>
                 </li>
                 <li>
-                    <a href="<?= base_url('dashboard') ?>">
+                    <a href="#">
                         <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
                         Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Shop Page
+                    </a>
+                </li>
+                <li>
+                    <a href="../authentication/_logout.php">
+                        <span class="glyphicon glyphicon-log-out" id="rotate-the-icon"></span>
+                        Logout
                     </a>
                 </li>
 

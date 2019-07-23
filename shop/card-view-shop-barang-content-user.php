@@ -9,7 +9,7 @@
                 <h3 style="color: ivory">Thumbnail label</h3>
                 <p>...</p>
                 <p>
-                    <a href="#" class="btn btn-primary" role="button" id="buy-alert">Buy</a>
+                    <a href="#" class="btn btn-primary" role="button" id="buy-alert">+ CART</a>
                 </p>
             </div>
         </div>

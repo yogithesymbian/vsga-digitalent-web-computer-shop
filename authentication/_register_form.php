@@ -114,12 +114,8 @@ $sha1_pass = SHA1($password);
 $sha1_pass_reenter = SHA1($password_reenter);
 
 if (isset($username)) {
-    // $_uuid = "SELECT UUID()";
-    // $uuid = mysqli_query($connect, $_uuid);
 
-    // print($uuid);
-
-    $query = "INSERT INTO tb_register VALUES (uuid(),'$username', '$email','$sha1_pass','$sha1_pass_reenter',NULL,NULL,NULL,NULL,NULL,NULL)";
+    $query = "INSERT INTO tb_register VALUES (uuid(),'$username', '$email','$sha1_pass','$sha1_pass_reenter',NULL,NULL,NULL,NULL,NULL,NULL,NULL)";
     $sql = mysqli_query($connect, $query);
     // Jika data disimpan value sql = 1
     // Jika data tidak tersimpan value sql = 0

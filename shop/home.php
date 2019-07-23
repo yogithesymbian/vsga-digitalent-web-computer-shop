@@ -32,7 +32,7 @@
                     <br>
 
                     <!-- Table  -> content -->
-                    <?php include_once('card-view-shop-barang-content.php'); ?>
+                    <?php include_once('card-view-shop-barang-content-user.php'); ?>
                     <!-- end of Table -->
 
                     <!-- for container the content -->

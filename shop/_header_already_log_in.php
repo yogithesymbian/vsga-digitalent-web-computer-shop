@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+require_once "../_config/config.php";
+?>
+
 <header style="margin-top: -60px">
 
     <nav class="navbar navbar-default">
@@ -26,8 +29,47 @@
                     <li><a href="#">Page 3</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Me <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">Hi <strong><?= $_SESSION['user']; ?></strong></a></li>
+                            <li><a href="#">Change Profile</a></li>
+                            <li>
+                                <a href="../authentication/_logout.php">
+                                    <span class="glyphicon glyphicon-shopping-cart">
+
+                                        MyCartShop
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transaction/invoice.php">
+
+                                    <span class="glyphicon glyphicon-envelope">
+                                        MyInvoice</span></a>
+                            </li>
+                            <li>
+                                <a href="../authentication/_logout.php">
+                                    <span class="glyphicon glyphicon-log-out"> Logout</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <span class="glyphicon glyphicon-cog"> Setting</span>
+                                </a></li>
+                        </ul>
+                    </li>
                     <li>
-                        <a href="../authentication/_logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                        <?php include_once('_retrive_show_user_data.php') ?>
+
+                        <?php
+                        while ($row = mysqli_fetch_array($hasil)) {
+                            ?>
+                            <img src="<?php echo "$row[profile_img]" ?>" alt="" style="border-radius: 50%; width: 45px; height: 45px">
+                        <?php
+                        }
+                        ?>
+
                     </li>
                 </ul>
             </div>

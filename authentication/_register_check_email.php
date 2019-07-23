@@ -64,7 +64,7 @@
     <div class="row">
         <div class="col-md-7 col-xs-offset-5">
 
-            <a href="index.html" class="text-center text-link-digitalent"> <strong>Already have an account?</strong> </a>
+            <a href="index.php" class="text-center text-link-digitalent"> <strong>Already have an account? (admin login)</strong> </a>
 
         </div>
     </div>
