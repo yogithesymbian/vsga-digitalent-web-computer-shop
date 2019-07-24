@@ -1,7 +1,8 @@
 <?php
 ?>
-
-<div class="row">
+<?php include_once('_function_read_home.php') ?>
+<!-- already move cause dynamic data -->
+<!-- <div class="row">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
             <img src="../_assets/image/computer-1.jpg" alt="..." data-toggle="modal" data-target="#image-home-1">
@@ -15,5 +16,5 @@
         </div>
     </div>
 
-</div>
+</div> -->
 <?php ?>

@@ -44,6 +44,16 @@
                     <hr>
 
                     <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-tasks"></i></span>
+                        <input id="" type="text" class="form-control form-modal-digitalent text-input" name="specBrg" placeholder="SPESIFIKASI" required>
+                    </div>
+
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                        <input id="" type="number" class="form-control form-modal-digitalent text-input" name="price" placeholder="Rp 5.000.000" required>
+                    </div>
+
+                    <div class="input-container">
                         <span class="input-icon"><i class="glyphicon glyphicon-upload"></i></span>
                         <input id="quantity" type="number" class="form-control form-modal-digitalent" name="quantity" placeholder="Quantity 1 PCS" multiple>
                     </div>

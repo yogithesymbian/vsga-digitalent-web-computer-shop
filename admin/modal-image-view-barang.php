@@ -1,5 +1,6 @@
 <?php
 ?>
+<!-- HAS MOVED INTO _FUNCTION_INDEX_READ CAUSE PASSING DATA INTO MODAL -->
 <div id="image1" class="modal fade" role="dialog">
     <div class="modal-dialog">
 

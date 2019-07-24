@@ -6,6 +6,8 @@ $code_brg = $_POST['codeBrg'];
 $nama_brg = $_POST['nameBrg'];
 $quantity = $_POST['quantity'];
 $image1 = $_POST['datafile1'];
+$spec = $_POST['specBrg'];
+$price = $_POST['price'];
 $pathimage = $_POST['datafiledir'];
 
 
@@ -33,7 +35,7 @@ $target_dir = $init_target; // target_dir
 <?php
 if (isset($code_brg)) {
 
-    $query = "INSERT INTO tb_barang VALUES (uuid(),'$code_brg', '$nama_brg','$quantity','$target_dir',NULL,NULL,NULL)";
+    $query = "INSERT INTO tb_barang VALUES (uuid(),'$code_brg', '$nama_brg','$quantity','$spec','$price','$target_dir',NULL,NULL,NULL)";
     $sql = mysqli_query($connect, $query);
     // Jika data disimpan value sql = 1
     // Jika data tidak tersimpan value sql = 0

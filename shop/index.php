@@ -21,6 +21,10 @@ if (isset($_SESSION['user'])) {
         <div id="page-content-wrapper">
             <div class="container-fluid ">
 
+                <div class="digitalent-chat">
+                    <span class="glyphicon glyphicon-envelope"></span> Live Chat
+                </div>
+
                 <!-- header -->
                 <?php include_once('_header_global.php') ?>
                 <!-- end of container-fluid -->
@@ -28,6 +32,7 @@ if (isset($_SESSION['user'])) {
                 <!-- header -->
                 <?php include_once('_alert_login.php') ?>
                 <!-- end of container-fluid -->
+                <?php include_once('_slider.php') ?>
 
                 <div class="container">
 
@@ -53,6 +58,7 @@ if (isset($_SESSION['user'])) {
 
                     <!-- end of article start of content -->
                 </div>
+                <?php include_once('_home_footer.php'); ?>
             </div>
         </div>
 
@@ -63,6 +69,7 @@ if (isset($_SESSION['user'])) {
 
 
         <!-- jquery -->
+
         <script src="../_assets/js/jquery.js"></script>
         <script src="../_assets/js/bootstrap.min.js"></script>
         <script>

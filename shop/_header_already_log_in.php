@@ -10,25 +10,22 @@ require_once "../_config/config.php";
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand text-digitalent" href="#">Digitalent</a>
+                <a class="navbar-brand text-digitalent" href="../index.html">Digitalent</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">Home</a>
+                    <li>
+
+                        <a href="../index.html"> <span class="glyphicon glyphicon-home"></span> Home</a>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Page 1-1</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><a href="../page/about-us.php"> <span class="glyphicon glyphicon-question-sign"></span> About us</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Catalogue</a></li>
+                    <li><a href="../page/contact-us.php"><span class="glyphicon glyphicon-earphone"></span> Contact us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../admin/index.php">Administrators</a>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -36,7 +33,7 @@ require_once "../_config/config.php";
                             <li><a href="#">Hi <strong><?= $_SESSION['user']; ?></strong></a></li>
                             <li><a href="#">Change Profile</a></li>
                             <li>
-                                <a href="../authentication/_logout.php">
+                                <a href="#">
                                     <span class="glyphicon glyphicon-shopping-cart">
 
                                         MyCartShop
@@ -70,6 +67,11 @@ require_once "../_config/config.php";
                         }
                         ?>
 
+                    </li>
+                    <li style="color: white">
+                        &nbsp;
+                        <span class="glyphicon glyphicon-search"></span>
+                        &nbsp;
                     </li>
                 </ul>
             </div>

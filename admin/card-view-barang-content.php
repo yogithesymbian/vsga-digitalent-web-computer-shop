@@ -5,6 +5,7 @@
     <thead>
         <th>CODE BARANG</th>
         <th>NAMA BARANG</th>
+        <th>PRICE</th>
         <th>QUANTITY</th>
         <th>SPEC</th>
         <th>IMAGE</th>
