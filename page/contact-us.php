@@ -1,4 +1,5 @@
 <?php
+require_once "../_config/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +47,9 @@
         </div>
 
     </div>
+    <!--  -->
+    <?php include_once('../shop/_function_modal_log_in.php') ?>
+    <!--  -->
     <!-- end of container-fluid -->
     <!-- jquery -->
     <script src="../_assets/js/jquery.js"></script>

@@ -3,7 +3,7 @@
 
 <div id="modal-register" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         <!-- Modal content-->
         <div class="modal-content modal-style-digitalent" style="width: 430px; height: 590px">

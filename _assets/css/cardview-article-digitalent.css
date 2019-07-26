@@ -6,6 +6,7 @@
   margin: 30px auto;
   box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.25);
   background: #394263;
+
 }
 
 .page-header {
@@ -13,6 +14,7 @@
   padding: 20px 0px 30px 0px;
   margin: 0px 20px;
   border-bottom: 1px solid #ccc;
+  color: #d65a5a;
 }
 
 

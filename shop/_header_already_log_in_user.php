@@ -28,9 +28,6 @@ if (!isset($_SESSION['user'])) {
                     <li><a href="../page/contact-us.php"><span class="glyphicon glyphicon-earphone"></span> Contact us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="margin-right: -50px">
-                    <li>
-                        <a href="../admin/index.php">Administrators</a>
-                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Me <span class="caret"></span></a>
                         <ul class="dropdown-menu">

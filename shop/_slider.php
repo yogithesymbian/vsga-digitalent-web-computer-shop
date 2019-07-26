@@ -6,13 +6,14 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" class="image-slider-shadow">
+        <div class="carousel-inner image-slider-shadow">
 
             <div class="item active">
-                <img src="../_assets/image/ideas.jpg" alt="Los Angeles" style="width:100%">
+                <img src="../_assets/image/banner-rog-1.jpg" alt="Los Angeles" style="width:100%;height: 500px;">
                 <div class="carousel-caption">
                     <h3>Los Angeles</h3>
                     <p>LA is always so much fun!</p>
@@ -20,7 +21,7 @@
             </div>
 
             <div class="item">
-                <img src="../_assets/image/neon-gamer-illustration-flat-design_52683-14178.jpg" alt="Chicago" style="width:100%;">
+                <img src="../_assets/image/banner-rog-2.jpg" alt="Chicago" style="width:100%;height: 500px;">
                 <div class="carousel-caption">
                     <h3>Chicago</h3>
                     <p>Thank you, Chicago!</p>
@@ -28,7 +29,15 @@
             </div>
 
             <div class="item">
-                <img src="../_assets/image/isometric-data-security-background_52683-1095.jpg" alt="New York" style="width:100%">
+                <img src="../_assets/image/banner-rog-3.jpg" alt="New York" style="width:100%;height: 500px;">
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../_assets/image/banner-rog-4.jpg" alt="New York" style="width:100%;height: 500px;">
                 <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>

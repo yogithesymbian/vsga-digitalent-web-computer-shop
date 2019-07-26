@@ -43,8 +43,8 @@
             <form action="_register_form.php" method="post" class="#">
 
                 <div class="form-group col-md-8">
-                    <label for="email" class="#" id="text-primary-light-small">Email (Checking Valid Mail)</label>
-                    <input type="email" name="email" id="email" class="form-control" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
+                    <span class="input-icon" style="margin-left: 15px; color: white"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="yourmail@mail.com" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
 
                 <div class="form-group">
@@ -60,7 +60,11 @@
         </div>
 
     </div>
-
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
     <div class="row">
         <div class="col-md-7 col-xs-offset-5">
 

@@ -26,7 +26,7 @@
     <!-- end login function -->
     <div class="row" style="background-color: #4D000000">
 
-        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>SIGN NOW</strong> </h1>
+        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIGN NOW</strong> </h1>
 
         <div class="col-md-7 col-md-offset-4">
 
@@ -38,17 +38,18 @@
             <form action="" method="POST" class="#">
 
                 <div class="form-group col-md-8">
-                    <label for="email" class="#" id="text-primary-light-small">Email</label>
+                    <span class="input-icon" style="margin-left: 15px; color: white"><i class="glyphicon glyphicon-user"></i></span>
                     <input type="email" name="email" id="email" class="form-control" value="<?php echo $email_from ?>" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
 
+
                 <div class="form-group col-md-8">
-                    <label for="password" class="#" id="text-primary-light-small">Password</label>
+                    <span class="input-icon" style="margin-left: 15px; color: white"><i class="glyphicon glyphicon-lock"></i></span>
                     <input type="password" name="password" id="password" class="form-control" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
 
 
-                <div class="form-group col-md-8">
+                <div class="form-group col-md-8" style="margin-left: 60px">
                     <strong>
                         <span style="color:#FFFFFF">
                             How many sytnx errors are show here below: <br>
@@ -62,8 +63,10 @@
 
 
                 <div class="form-group col-md-8">
+                    <span class="input-icon" style="margin-left: 15px; color: white"><i class="glyphicon glyphicon-lock"></i></span>
                     <input type="text" name="#" id="#" class="form-control" placeholder="answer" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
+
 
 
 

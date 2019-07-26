@@ -1,4 +1,5 @@
 <?php
+require_once('../_config/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,9 +21,30 @@
                 <span class="glyphicon glyphicon-envelope"></span> Live Chat
             </div>
 
-            <!-- header -->
-            <?php include_once('_header_already_log_in.php') ?>
 
+            <!-- retrive data user for check log in as administrator or user  -->
+            <!--
+                1 . administrator
+                2 . user
+             -->
+            <?php include_once('_user_or_admin.php') ?>
+
+            <?php
+            if ($rowx[role_id] == 1) {
+                ?>
+                <!-- a user need contact to admin for administrator permission -->
+                <?php include_once('_header_already_log_in.php') ?>
+            <?php
+            } else if ($rowx[role_id] == 2) {
+                ?>
+                <?php include_once('_header_already_log_in_user.php') ?>
+            <?php
+            } else {
+                // default if a person/user register as default
+                include_once('_header_already_log_in_user.php');
+            }
+            ?>
+            <!-- end retrive data user  -->
             <?php include_once('_slider.php') ?>
 
             <div class="container">

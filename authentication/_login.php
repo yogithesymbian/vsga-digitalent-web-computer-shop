@@ -32,7 +32,7 @@
 
     <div class="row" style="background-color: #4D000000">
 
-        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>SIGN NOW</strong> </h1>
+        <h1 class="text-center header-digitalent" id="text-header-h1" style="margin-bottom: 40px; font-size: 40px"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SIGN NOW</strong> </h1>
 
         <div class="col-md-7 col-md-offset-4">
 
@@ -44,8 +44,8 @@
             <form action="_login_after_next.php" method="post" class="#">
 
                 <div class="form-group col-md-8">
-                    <label for="email" class="#" id="text-primary-light-small">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
+                    <span class="input-icon" style="margin-left: 15px; color: white"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="yourmail@mail.com" style="background-color: #00000000; border: 2px solid #FFFFFF" required autofocus>
                 </div>
 
                 <div class="form-group">

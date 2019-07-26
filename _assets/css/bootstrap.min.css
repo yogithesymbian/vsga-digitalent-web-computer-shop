@@ -11,8 +11,6 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    overflow-y: inherit;
-
     color: ivory;
 }
 
@@ -147,6 +145,7 @@ textarea {
     color: inherit;
 }
 
+
 button {
     overflow: visible
 }
@@ -204,12 +203,28 @@ input {
 }
 .scnd-font-color {
 		color: #9099b7;
-	}
+    }
+
+    /* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid rgba(255, 255, 255, 0.842);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.877);
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.651) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .input-container {
 	position: relative;
 }
-	input[type=text],input[type=email]{
+	input[type=text],input[type=email],input[type=password]{
 		width: -webkit-fill-available;
 		height: 50px;
 		margin-left: 20px;
@@ -218,8 +233,8 @@ input {
 		background: #50597b;
 		color: #fff;
 		border: solid 1px #1f253d;
-		border-radius: 5px;
-	}
+        border-radius: 5px;
+    }
 		input[type=text]::-webkit-input-placeholder { /* WebKit browsers */
 	   		color: #fff;
 	   	}
@@ -1338,8 +1353,12 @@ th {
 
 html {
     font-size: 10px;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+    overflow-y: scroll;
 }
+.element::-webkit-scrollbar { width: 0 !important }
+.element { overflow: -moz-scrollbars-none; }
+.element { -ms-overflow-style: none; }
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3049,14 +3068,14 @@ input[type=file] {
     display: block;
     color: #fff;
     width: -webkit-fill-available;
-		height: 50px;
-		margin-left: 20px;
-		margin-bottom: 10px;
-		padding-left: 45px;
-		background: #50597b;
-		color: #fff;
-		border: solid 1px #1f253d;
-		border-radius: 5px;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 45px;
+    background: #50597b;
+    color: #fff;
+    border: solid 1px #1f253d;
+    border-radius: 5px;
 }
 
 input[type=range] {
@@ -7137,8 +7156,9 @@ button.close {
     position: relative;
     width: 100%;
     overflow: hidden;
-  border: 2px solid #1f253d;
-  height: 500px; margin-top: -35px;
+    border: 2px solid #1f253d;
+    height: 500px; margin-top: -35px;
+
 }
 
 .carousel-inner>.item {
@@ -7151,7 +7171,7 @@ button.close {
 
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img {
-    line-height: 1
+    line-height: 1;
 }
 
 @media all and (transform-3d),

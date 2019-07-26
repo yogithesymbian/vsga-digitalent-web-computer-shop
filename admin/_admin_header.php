@@ -42,9 +42,42 @@ if (!isset($_SESSION['user'])) {
                     </a>
                 </li>
                 <li>
+                    <strong style="color: ivory">abcd</strong>
+                </li>
+                <li>
                     <a href="../shop/index.php">
                         <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
-                        Shop Page
+                        Product
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Pemesanan
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Client
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Admin
+                    </a>
+                </li>
+                <li>
+                    <a href="../shop/index.php">
+                        <span class="glyphicon glyphicon-dashboard" id="rotate-the-icon"></span>
+                        Web view
                     </a>
                 </li>
                 <li>

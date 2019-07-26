@@ -17,7 +17,11 @@
                 <form action="#" method="post" enctype="multipart/form-data">
 
 
-                    <input type="file" class="input-sm" name="files[]" multiple />
+                    <div class="input-container">
+                        <span class="input-icon"><i class="glyphicon glyphicon-camera"></i></span>
+                        <input type="file" class="input-sm" name="files[]" multiple />
+                    </div>
+
 
                     <hr>
 

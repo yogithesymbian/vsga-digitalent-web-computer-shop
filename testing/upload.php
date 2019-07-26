@@ -1,7 +1,14 @@
 <?php
+
+// $rand = rand(10000000, 999999999);
+// $time = time();
+// $file_name = $rand . $time . $_FILES["fileToUpload"]["name"];
+$file_name = "profile.jpg";
+
 $target_dir = "uploads/";
 
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+// $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir . $file_name;
 $uploadOk = 1;
 
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -39,9 +46,11 @@ if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
     // if everything is ok, try to upload file
 } else {
+
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
 }
+// rename(""."/tmp/tmp_file.txt", "/home/user/login/docs/my_file.txt");
