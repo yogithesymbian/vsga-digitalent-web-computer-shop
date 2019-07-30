@@ -15,9 +15,26 @@ A PART OF ASSET COLLECTION IS FROM
 
 ```
 ADMINISTRATOR
+=============
 user : digitalent@gmail.com
 pass : 12345
 USER
+=============
+user : user3@user.com
+pass : 12345
+```
+
+```
+CHANGE-LOG
+1.
+```
+
+## COMING SOON
+
+```
+
+
+
 ```
 
 Copyright Disclaimer-Title 17, US Code (Sections 107-118 of the copyright law, Act 1976):
@@ -34,15 +51,3 @@ Node.js: 10.11.0
 V8: 6.9.427.31-electron.0
 OS: Linux x64 4.19.0-kali5-amd64
 ```
-
-<!-- pending -->
-<!--
-HOME
-PRODUK
-PEMESANAN
-PELANGGAN
-KONTAK
-ADMIN
-LIHAT WEB
-KELUAR
- -->
