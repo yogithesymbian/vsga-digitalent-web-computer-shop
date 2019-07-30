@@ -28,7 +28,7 @@ require_once('../_config/config.php');
                 2 . user
              -->
             <?php include_once('_user_or_admin.php') ?>
-
+            <!-- this connection -->
             <?php
             if ($rowx[role_id] == 1) {
                 ?>

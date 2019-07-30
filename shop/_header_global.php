@@ -1,4 +1,8 @@
-<?php ?>
+<?php
+if (isset($_SESSION['user'])) {
+    echo "<script> window.location='home.php'; </script>";
+}
+?>
 <header style="margin-top: -60px">
 
     <nav class="navbar navbar-default">

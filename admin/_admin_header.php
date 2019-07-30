@@ -2,7 +2,7 @@
 require_once "../_config/config.php";
 
 if (!isset($_SESSION['user'])) {
-    echo "<script> window.location='../authentication/index.php'; </script>";
+    echo "<script> window.location='../authentication/_login.php'; </script>";
 }
 ?>
 <!DOCTYPE html>
